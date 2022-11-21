@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  width: 20%;
+  border-radius: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.rectangle {
+  background-color: rgba(100, 120, 140, 0.5);
+  width: 300px;
+  height: 300px;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.top-left-input-container,
+.top-right-input-container,
+.bottom-right-input-container,
+.bottom-left-input-container {
+  position: absolute;
+}
+
+.top-left-input-container {
+  top: 5%;
+  left: 27%;
+}
+
+.top-right-input-container {
+  top: 5%;
+  right: 28%;
+}
+
+.bottom-right-input-container {
+  bottom: 5%;
+  right: 28%;
+}
+
+.bottom-left-input-container {
+  bottom: 5%;
+  left: 27%;
+}
+
+.top-left-input-container::after,
+.top-right-input-container::after,
+.bottom-right-input-container::after,
+.bottom-left-input-container::after {
+  content: "px";
+}
