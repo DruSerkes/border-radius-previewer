@@ -1,6 +1,8 @@
 html,
 body {
   background-color: #333;
+  background: linear-gradient(145deg, #333, #aaa);
+  background-position: left;
   color: #fff;
   height: 100%;
   width: 100vw;
@@ -20,16 +22,17 @@ main {
 }
 
 input {
-  width: 20%;
-  border-radius: 10px;
   border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
   position: relative;
+  width: 20%;
 }
 
 .rectangle {
-  background-color: rgba(100, 120, 140, 0.5);
-  width: 300px;
-  height: 300px;
+  background-color: rgba(105, 125, 175, 1);
+  width: 400px;
+  height: 400px;
   margin: 2rem;
   border-radius: 10px;
 }
@@ -43,22 +46,22 @@ input {
 
 .top-left-input-container {
   top: 5%;
-  left: 27%;
+  left: 22%;
 }
 
 .top-right-input-container {
   top: 5%;
-  right: 28%;
+  right: 22%;
 }
 
 .bottom-right-input-container {
   bottom: 5%;
-  right: 28%;
+  right: 22%;
 }
 
 .bottom-left-input-container {
   bottom: 5%;
-  left: 27%;
+  left: 22%;
 }
 
 .top-left-input-container::after,
@@ -66,4 +69,15 @@ input {
 .bottom-right-input-container::after,
 .bottom-left-input-container::after {
   content: "px";
+}
+
+.properties {
+  background-color: rgba(250, 250, 250, 0.75);
+  border-radius: 5px;
+  height: 200px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  translate: -50% -50%;
+  width: 200px;
 }
