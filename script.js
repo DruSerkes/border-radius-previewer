@@ -23,6 +23,12 @@ const handleCopyCss = () => {
     return result += `${next.textContent};\n`;
   }, '');
   navigator.clipboard.writeText(resultingCss);
+  showCopyFeedback();
+};
+
+const showCopyFeedback = () => {
+  copyCssButton.textContent = 'Copied!';
+  setTimeout(() => copyCssButton.textContent = 'Copy CSS', 1500);
 };
 
 topLeft.addEventListener('change', handleChangeValue);
