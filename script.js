@@ -43,4 +43,4 @@ bottomRight.addEventListener('keyup', handleChangeValue);
 bottomLeft.addEventListener('change', handleChangeValue);
 bottomLeft.addEventListener('keyup', handleChangeValue);
 
-copyCssButton.addEventListener('click', handleCopyCss);
+copyCssButton.addEventListener('pointerup', handleCopyCss);
